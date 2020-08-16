@@ -4,7 +4,7 @@ title:     typora及markdown使用入门				# 标题
 subtitle:   使用markdown高效排版  #副标题
 date:       2020-08-16 				# 时间
 author:     JairK 						# 作者
-header-img: s1.ax1x.com/2020/08/16/dE0MQO.png 	#这篇文章标题背景图片
+header-img: img\post-bg-rwd.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
 
