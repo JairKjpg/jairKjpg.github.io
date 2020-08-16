@@ -265,7 +265,13 @@ tags:								#标签
    | :----- | -----: | :------: |
    | 单元格 | 单元格 |  单元格  |
    | 单元格 | 单元格 |  单元格  |
-
+### markdown与latex
+1. $$+回车
+$$
+\frac{3}{4x+3}
+2. $\int_0^2\pi \pi d\theta$
+### markdown与todo-list
+-[ ]项目
 ### markdown高级技巧
 
 #### 技巧1 支持HTML元素
