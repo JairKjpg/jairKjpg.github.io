@@ -17,8 +17,6 @@ tags:								#标签
 
 # typora及markdown使用入门
 
-[toc]
-
 ## typora的介绍以及使用
 
 ### markdown标题
@@ -38,12 +36,12 @@ tags:								#标签
 
 ### markdown段落格式
 
-1. 段落换行
+1. #### 段落换行
 
    1. 使用两个以上的空格+回车
    2. 使用空行来换行
 
-2. 字体
+2. #### 字体
 
    ```markdown
    *斜体文本*
@@ -56,7 +54,7 @@ tags:								#标签
 
 ### markdown列表
 
-1. 无序列表 
+1. #### 无序列表 
 
    ```markdown
    * 第一项
@@ -89,7 +87,7 @@ tags:								#标签
 
    <img src="https://www.runoob.com/wp-content/uploads/2019/03/560384BB-2B00-41D5-ACF2-18972F7F2775.jpg" alt="img" style="zoom: 80%;" />
 
-3. 列表嵌套
+3. #### 列表嵌套
 
    ```markdown
    1. 第一项：
@@ -106,7 +104,7 @@ tags:								#标签
 
 ### markdown区块
 
-1. 区块、区块的嵌套
+1. #### 区块、区块的嵌套
 
    ```markdown
    > 区块引用
@@ -120,7 +118,7 @@ tags:								#标签
 
    <img src="https://www.runoob.com/wp-content/uploads/2019/03/AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg" alt="img" style="zoom: 60%;" />
 
-2. 区块中使用列表
+2. #### 区块中使用列表
 
    ```markdown
    > 区块中使用列表
@@ -133,7 +131,7 @@ tags:								#标签
 
    <img src="https://www.runoob.com/wp-content/uploads/2019/03/E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg" alt="img" style="zoom:110%;" />
 
-3. 列表中使用区块
+3. ####　列表中使用区块
 
    ```markdown
    * 第一项
@@ -146,7 +144,7 @@ tags:								#标签
 
 ### markdown代码
 
-1. 代码区块
+1. #### 代码区块
 
    ```markdown
    ​```javascript
@@ -154,12 +152,17 @@ tags:								#标签
        alert('RUNOOB');
    });
    ​```
+   ```
    
+2. #### 代碼段
+
+   ```markdown
+   `test`
    ```
 
 ### markdown链接
 
-1. 普通链接
+1. #### 普通链接
 
    ```markdown
    这是一个链接 [菜鸟教程](https://www.runoob.com)
@@ -167,7 +170,7 @@ tags:								#标签
 
    ​		这是一个链接[菜鸟教程](https://www.runoob.com)
 
-2. 直接使用链接地址
+2. #### 直接使用链接地址
 
    ```markdown
    <https://www.runoob.com>
@@ -175,7 +178,7 @@ tags:								#标签
 
    ​		<https://www.runoob.com>
 
-3. 高级链接
+3. #### 高级链接
 
    ```markdown
    这个链接用 1 作为网址变量 [Google][1]
@@ -195,7 +198,7 @@ tags:								#标签
 
 ### markdown图片
 
-1. 直接引用
+1. #### 直接引用
 
    ```markdown
    ![alt 属性文本](图片地址)
@@ -215,7 +218,7 @@ tags:								#标签
 
    ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
 
-2. 使用变量
+2. #### 使用变量
 
    ```
    这个链接用 1 作为网址变量 [RUNOOB][1].
@@ -231,7 +234,7 @@ tags:								#标签
 
 ### markdown表格
 
-1. 格式
+1. #### 格式
 
    ```
    |  表头   | 表头  |
@@ -245,7 +248,7 @@ tags:								#标签
    | 单元格 | 单元格 |
    | 单元格 | 单元格 |
 
-2. 对齐方式
+2. #### 对齐方式
 
    ```
    - **-:** 设置内容和标题栏居右对齐。
@@ -267,27 +270,29 @@ tags:								#标签
 
 #### 技巧1 支持HTML元素
 
-1. 支持的 HTML 元素有：`<kbd> <b> <i> <em> <sup> <sub> <br>`等
+支持的 HTML 元素有：`<kbd> <b> <i> <em> <sup> <sub> <br>`等
 
-   ```
-   使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
-   ```
+```
+使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+```
 
-   ​		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+​		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 
 #### 技巧2 转义
 
-1. Markdown 使用反斜杠转义特殊字符
+Markdown 使用反斜杠转义特殊字符
 
-   ```
-   **文本加粗** 
-   \*\* 正常显示星号 \*\*
-   ```
+```
+**文本加粗** 
+\*\* 正常显示星号 \*\*
+```
 
-   **文本加粗** 
-   \*\* 正常显示星号 \*\*
+**文本加粗** 
+\*\* 正常显示星号 \*\*
 
 #### 技巧3 公式
+
+$$+回車,使用内置的latex解釋器 。
 
 #### 技巧4 流程图、时序图(顺序图)、甘特图
 
