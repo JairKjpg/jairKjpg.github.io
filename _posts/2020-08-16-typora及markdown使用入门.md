@@ -268,11 +268,12 @@ tags:								#标签
 ### markdown与latex
 
 1. $$+回车
-  $$
-  \frac{3}{4x+3}
-  $$
+$$
+\frac{3}{4x+3}
+$$
 
-2. $$\int_0^2\pi \pi d\theta$$
+2. $$\int_0^{2\pi} \pi d\theta$$
+3. 不知道这个$$\int_0^{2\pi} \pi d\theta$$（double $）是文段的，还是$$\int_0^{2\pi} \pi d\theta$（single $）是文段。这个在typora均为文段内。不过在GitHub page上的表现会有出入。
 
 ### markdown与todo-list
 
