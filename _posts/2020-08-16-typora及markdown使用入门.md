@@ -268,13 +268,16 @@ tags:								#标签
 ### markdown与latex
 
 1. $$+回车
-double $
-\frac{3}{4x+3}
+  $$
+  \frac{3}{4x+3}
+  $$
+
 2. $$\int_0^2\pi \pi d\theta$$
 
 ### markdown与todo-list
 
-- [ ]项目
+- [ ] 项目
+
 ### markdown高级技巧
 
 #### 技巧1 支持HTML元素
@@ -285,7 +288,7 @@ double $
 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 ```
 
-​		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+#### 		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 
 #### 技巧2 转义
 
