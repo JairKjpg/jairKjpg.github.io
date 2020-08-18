@@ -7,7 +7,7 @@ description: "身与心去为明日奔驰"
 keyword: "Jair, Jair Blog, 卓尔的博客, zhuoer, デザイン, Apple, iPhone，Microsoft Fluent Design"
 url: "http://JairKjpg.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
