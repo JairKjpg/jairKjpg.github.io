@@ -275,7 +275,7 @@ $$
 
 2. $$\int_0^{2\pi} \pi d\theta$$
 3. $\int_0^{2\pi} \pi d\theta$
-4. 不知道这个$$\int_0^{2\pi} \pi d\theta$$（double dollors）是文段的，还是$\int_0^{2\pi} \pi d\theta$（single dollors）是文段。这个在typora均为文段内。不过在GitHub page上的表现会有出入。
+4. 不知道这个$$\int_0^{2\pi} \pi d\theta$$（double dollors）是文段的，还是$\int_0^{2\pi} \pi d\theta$（single dollors）是文段。这个在typora均为文段内。不过在GitHub page上的表现会有出入
 
 ### markdown与todo-list
 
