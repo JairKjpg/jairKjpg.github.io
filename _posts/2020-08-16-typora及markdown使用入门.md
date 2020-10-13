@@ -282,9 +282,7 @@ $$
 - [ ] 项目1
 - [x] 项目1
 
-### markdown高级技巧
-
-#### 技巧1 支持HTML元素
+### Markdown与HTML元素
 
 支持的 HTML 元素有：`<kbd> <b> <i> <em> <sup> <sub> <br>`等
 
@@ -292,9 +290,9 @@ $$
 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 ```
 
-#### 		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+​		使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
 
-#### 技巧2 转义
+### Markdown转义字符
 
 Markdown 使用反斜杠转义特殊字符
 
@@ -306,17 +304,211 @@ Markdown 使用反斜杠转义特殊字符
 **文本加粗** 
 \*\* 正常显示星号 \*\*
 
-#### 技巧3 公式
+### Markdown与Latex公式
 
 $$+回車,使用内置的latex解釋器 。
 
-#### 技巧4 流程图、时序图(顺序图)、甘特图
+#### Markdown与Mermaid
 
+流程图
 
+```
+graph TB
 
+  id1(圆角矩形)--普通线-->id2[矩形];
+  subgraph 子图
+   id2==粗线==>id3{菱形}
+   id3-.虚线.->id4>右向旗帜]
+   id3--无箭头---id5((圆形))
+  end
+```
 
+```mermaid
+graph TB
 
+  id1(圆角矩形)--普通线-->id2[矩形];
+  subgraph 子图
+   id2==粗线==>id3{菱形}
+   id3-.虚线.->id4>右向旗帜]
+   id3--无箭头---id5((圆形))
+  end
+```
 
+时序图
+
+```
+sequenceDiagram
+
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+     John-->>Alice: Great!
+     John->>Bob   : How about you?
+     Bob-->>John  : Jolly good!
+```
+
+```mermaid
+sequenceDiagram
+
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+     John-->>Alice: Great!
+     John->>Bob   : How about you?
+     Bob-->>John  : Jolly good!
+```
+
+Gantt 图
+
+```
+gantt
+
+section Section
+          Completed: done,   des1,       2014-01-06, 2014-01-08
+          Active   : active, des2,       2014-01-07, 3d
+         Parallel 1        : des3,   after des1, 1d
+         Parallel 2        : des4,   after des1, 1d
+         Parallel 3        : des5,   after des3, 1d
+         Parallel 4        : des6,   after des4, 1d
+```
+
+```mermaid
+gantt
+
+section Section
+          Completed: done,   des1,       2014-01-06, 2014-01-08
+          Active   : active, des2,       2014-01-07, 3d
+         Parallel 1        : des3,   after des1, 1d
+         Parallel 2        : des4,   after des1, 1d
+         Parallel 3        : des5,   after des3, 1d
+         Parallel 4        : des6,   after des4, 1d
+```
+
+饼图
+
+```
+pie
+
+  title Key elements in Product X
+  "Calcium" : 42.96
+  "Potassium" : 50.05
+  "Magnesium" : 10.01
+  "Iron" :  5
+
+```
+
+```mermaid
+pie
+
+  title Key elements in Product X
+  "Calcium" : 42.96
+  "Potassium" : 50.05
+  "Magnesium" : 10.01
+  "Iron" :  5
+
+```
+
+类别图
+
+```
+classDiagram
+
+  Class01 <|-- AveryLongClass: Cool
+  <<interface>> Class01
+  Class09-->C2: Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07: equals()
+  Class07: Object[] elementData
+  Class01: size()
+  Class01: int chimp
+  Class01: int gorilla
+  class Class10 {
+    <<service>>
+    int id
+    size()
+  }
+```
+
+```mermaid
+classDiagram
+
+  Class01 <|-- AveryLongClass: Cool
+  <<interface>> Class01
+  Class09-->C2: Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07: equals()
+  Class07: Object[] elementData
+  Class01: size()
+  Class01: int chimp
+  Class01: int gorilla
+  class Class10 {
+    <<service>>
+    int id
+    size()
+  }
+```
+
+状态图
+
+```text
+stateDiagram
+
+    [*]-->Active
+    state Active {
+        [*]-->NumLockOff
+        NumLockOff-->NumLockOn : EvNumLockPressed
+        NumLockOn-->NumLockOff : EvNumLockPressed
+        --
+        [*]-->CapsLockOff
+        CapsLockOff-->CapsLockOn : EvCapsLockPressed
+        CapsLockOn-->CapsLockOff : EvCapsLockPressed
+        --
+        [*]-->ScrollLockOff
+        ScrollLockOff-->ScrollLockOn : EvCapsLockPressed
+        ScrollLockOn-->ScrollLockOff : EvCapsLockPressed
+            }
+```
+
+```mermaid
+stateDiagram
+
+    [*]-->Active
+    state Active {
+        [*]-->NumLockOff
+        NumLockOff-->NumLockOn : EvNumLockPressed
+        NumLockOn-->NumLockOff : EvNumLockPressed
+        --
+        [*]-->CapsLockOff
+        CapsLockOff-->CapsLockOn : EvCapsLockPressed
+        CapsLockOn-->CapsLockOff : EvCapsLockPressed
+        --
+        [*]-->ScrollLockOff
+        ScrollLockOff-->ScrollLockOn : EvCapsLockPressed
+        ScrollLockOn-->ScrollLockOff : EvCapsLockPressed
+            }
+```
+
+实体关系图
+
+```text
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
 
 
 
